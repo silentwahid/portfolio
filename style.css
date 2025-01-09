@@ -1,12 +1,12 @@
 @font-face {
-        font-family: 'Skyscapers';
+        font-family: 'Times New Roman', Times, serif;
         src: url('//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf') format('truetype');
     }
     
     /* sample using the font */
     body{
         font-family: 'Skyscapers';
-        background: #4B4A52;
+        background: #dddbdb;
     }
 *{
     margin: 0 0 0 0;
@@ -18,7 +18,7 @@
 
 span {
   color: #69635E;
-}
+} 
 /*------------------------------------------NAV--------------------------------------*/
 
 
@@ -36,7 +36,7 @@ header {
     border-radius: 5px;
   }
   header.sticky {
-    background-color: #4B4A52;
+    background-color: #c1c1c1;
     box-shadow: 0 0 10px rgba(0 0 0 / 10%);
 }
     
@@ -49,6 +49,7 @@ header {
   .logo img {
     max-width: 15%;
     height: auto;
+    border-radius: 50%;
   }
   
   nav {
@@ -159,8 +160,8 @@ header {
 }
 .txt h1 {
   font-size: 70px;
-  color: #AA3E4D;
-  text-shadow: #FA7A20 1px 1px;
+  color: #000000;
+  text-shadow: #a4a4a4 1px 1px;
   margin: 20px 12px;
 }
 .txt p {
@@ -337,7 +338,7 @@ header {
   left: 0;
   width: 0;
   height: 100%;
-  background: #2c2c2c;
+  background: #c1c1c1;
   z-index: -1;
   transition: .5s;
 }
@@ -416,7 +417,7 @@ header {
   left: 0;
   width: 0;
   height: 100%;
-  background: rgb(73, 73, 73);
+  background: #c1c1c1;
   z-index: -1;
   transition: .5s;
 }
