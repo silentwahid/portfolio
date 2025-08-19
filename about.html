@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* Navbar */
+      .site-header {
+            position: fixed;
+            top: 0; 
+            width: 100%;
+            display: flex; 
+            justify-content: space-around;
+            padding: 20px 40px;
+            overflow: hidden;
+            z-index: 10;
+            
+        }
+        .site-header a {
+            color: #ffffff;
+            position: relative;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .site-header a:hover {
+            opacity: 0.8;
+        }
+
+        .main-nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #ffffff;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        /* Underline animation for nav links */
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .hero h1 {
+      font-size: clamp(80px, 15vw, 220px);
+      letter-spacing: -6px;
+      margin: 0;
+      line-height: 1;
+      text-transform: uppercase;
+      animation: fadeDown 1.2s ease forwards;
+    }
+    .hero p {
+      max-width: 700px;
+      font-size: clamp(16px, 2vw, 22px);
+      margin-top: 30px;
+      letter-spacing: 2px;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeUp 2s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Quote Section */
+    .quote {
+      padding: 120px 20px;
+      text-align: center;
+      font-size: clamp(28px, 4vw, 50px);
+      font-weight: bold;
+      line-height: 1.3;
+      max-width: 900px;
+      margin: auto;
+      letter-spacing: -1px;
+    }
+    .quote span {
+      display: block;
+      opacity: 0.2;
+      font-size: clamp(18px, 2vw, 24px);
+      margin-top: 15px;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    /* Content Sections */
+    .content {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      font-size: clamp(16px, 1.8vw, 20px);
+      line-height: 1.8;
+    }
+    .content h2 {
+      font-size: clamp(28px, 3vw, 50px);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .content p {
+      margin-bottom: 40px;
+    }
+
+    /* Highlight Bar */
+    .highlight {
+      background: #111;
+      padding: 80px 20px;
+      text-align: center;
+      font-size: clamp(20px, 2vw, 28px);
+      letter-spacing: 2px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 576px) {
+      .hero h1 { font-size: clamp(60px, 20vw, 120px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+        <a href="index.html" class="fade-in">PORTFOLIO</a>
+        <nav class="main-nav">
+            <a href="work.html" class="fade-in">Work</a>
+            <a href="about.html" class="fade-in">About</a>
+        </nav>
+    </header>
+  <section class="hero">
+    <h1>Silent Wahid</h1>
+    <p>Where strategy, design, and vision merge into digital experiences that leave a mark.</p>
+  </section>
+
+  <section class="quote">
+    “Not just projects — <br> we build **legacies**.” 
+    <span>Driven by creativity. Built with precision.</span>
+  </section>
+
+  <section class="content">
+    <h2>Who We Are</h2>
+    <p>
+      Silent Wahid is a digital powerhouse born to transform brands into empires.  
+      We design, craft, and engineer solutions that scale — blending creativity with strategy to deliver results that echo beyond the ordinary.  
+    </p>
+
+    <h2>Philosophy</h2>
+    <p>
+      We believe in the art of uniqueness. Every line, every frame, every interface is sculpted to reflect identity, inspire connection, and accelerate growth.  
+      We don’t follow trends. We set them.
+    </p>
+
+    <h2>Craft</h2>
+    <p>
+      From visionary branding to immersive websites, from content creation to campaigns — we shape narratives that don’t just look good, but *move people*.  
+      Our craft lives where imagination meets execution.
+    </p>
+
+    <h2>Let’s Connect</h2>
+    <p>
+      Ready to grow your empire?  
+      Reach out at <a href="mailto:silentwahid1@gmail.com" style="color:#fff; text-decoration:underline;">silentwahid1@gmail.com</a>
+    </p>
+  </section>
+
+  <section class="highlight">
+    Silent Wahid — Building Empires, Not Just Brands.
+  </section>
+
+  <footer>
+    © 2025 Silent Wahid. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
